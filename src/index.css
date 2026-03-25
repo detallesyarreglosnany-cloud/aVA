@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700;800&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Sora", sans-serif;
+
+  --color-black-pure: #0A0A0A;
+  --color-beige-sand: #F5F2ED;
+  --color-jungle-green: #062C1D;
+  --color-olive-green: #5A5A40;
+  
+  --radius-3xl: 24px;
+  --radius-4xl: 32px;
+}
+
+body {
+  background-color: var(--color-beige-sand);
+  color: var(--color-black-pure);
+  font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Swiper custom styles */
+.swiper-pagination-bullet-active {
+  background: var(--color-jungle-green) !important;
+}
+
